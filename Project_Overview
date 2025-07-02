@@ -1,0 +1,56 @@
+ Objective:
+The goal of this initial version of the project is to create a simple graphical screen using Pygame and allow a block (representing the snake) to move in response to keyboard input. This is a starter framework for building a full snake game.
+
+📦 Project Components:
+Pygame Library:
+
+Used to handle graphics, input events (like key presses), and game loops.
+
+Game Window:
+
+Size: 500x500 pixels.
+
+Background Color: Olive green (RGB: (110, 110, 5)).
+
+Block Image:
+
+The snake or moving element is a block image loaded from resources/block.jpg.
+
+Initial Position:
+
+The block starts at coordinates (100, 100).
+
+🎮 Game Mechanics:
+The main game loop listens for events like key presses or window close actions.
+
+Arrow keys (←, →, ↑, ↓) are used to move the block by 10 pixels in the respective direction.
+
+ESC key allows the user to exit the game.
+
+The block's movement updates the display after each move using the draw_block() function.
+
+🧠 Logic Flow:
+Initialize Pygame and set up the window.
+
+Load the block image and draw it on the screen.
+
+Enter the main loop:
+
+Check for key presses and adjust the block's position.
+
+Redraw the block at the new location.
+
+Quit the game on ESC or window close.
+
+🛠️ Suggestions for Improvement:
+To move from this starter to a full snake game, consider implementing:
+
+Snake body growth when it "eats" food.
+
+Collision detection (walls, self).
+
+A scoring system.
+
+A game-over screen and restart option.
+
+Frame-based movement instead of keypress-only.
